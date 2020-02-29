@@ -12,16 +12,12 @@
      if($char === ' ')
      {
       echo ' ';
-      while($char === ' ') and ($index < strlen($text))
+      while($char === ' ') 
         {
-          $char = $text{$index};
+          if ($index === strlen($text) ) break;
           $index++;
-
+          $char = $text{$index};
         }
      }
-     else
-     {
-      echo ' ';
-      $index++;
-     }
+      echo $char;
   } 

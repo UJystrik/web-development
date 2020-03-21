@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+h1
+{
+	font-size: 38px;
+    line-height: 42px;
+    color: #333333;
+    font-family: "Open Sans";
+    font-weight: 700;
+    padding-top: 85px;
+    margin-bottom: 14px;
+}
+h2
+{
+	font-size: 29px;
+    line-height: 45px;
+    color: #333333;
+    font-family: "Open Sans";
+    font-weight: 400;
+    margin-left: 2px;
+    margin-top: 29px;
+    margin-bottom: -20px;
+}
+p
+{
+	margin-top: 27px;
+	color: #555555;
+    font-family: "Georgia";
+    font-size: 14px;
+    line-height: 1.85;
+    margin-left: 4px;
+
+}
+ol
+{
+	width: 260px;
+    font-size: 14px;
+    line-height: 29px;
+    color: #555555;
+    font-family: "Georgia";
+    font-weight: 500;
+    margin-left: -25px;
+}
+ul
+{
+	width: 260px;
+    font-size: 13px;
+    line-height: 29px;
+    color: #555555;
+    font-family: "Georgia";
+    font-weight: 500;
+    padding-bottom: 12px;
+    margin-left: -22px;
+}
+.img1
+{
+	height: 280px;
+	width: 264px;
+	border-radius: 5px;
+	padding-bottom: 9px;
+}
+.img2
+{
+	height: 72px;
+	width: 120px;
+	margin-left: -5px;
+	padding-top: 13px;
+}
+.img3
+{
+	height: 12px;
+	width: 55px;
+}
+
+.leftbox
+{
+	width: 264px;
+	margin-top: 72px;
+	margin-left: 376px;
+	margin-right: 34px;
+    padding-right: 10px;
+    float: left;
+}
+.listheading-u
+{
+	font-size: 19px;
+    line-height: 30px;
+    color: #15a98c;
+    font-family: "Open Sans";
+    margin-top: 30px;
+    font-weight: 600;
+    line-height: 10px;
+}
+.listheading-o
+{
+	font-size: 19px;
+    line-height: 30px;
+    color: #15a98c;
+    font-family: "Open Sans";
+    margin-top: 30px;
+    font-weight: 600;
+    line-height: 8px;
+}
+.rightbox
+{
+	width: 450px;
+	margin-top: 100px;
+    padding-right: 10px;
+    float: left;
+}
+.quote
+{
+    font-size: 23px;
+    line-height: 42px;
+    color: #848484;
+    font-family: "Georgia";
+    font-style: italic;
+    line-height: 1.5;
+    margin-top: -22px;
+    margin-left: 50px;
+}
+.autor
+{
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 13px;
+    line-height: 30px;
+    margin-left: 55px;
+    margin-top: -21px;
+}
+#a
+{
+	margin-bottom: 35px;
+}
+#arrow
+{
+	font-family: "Georgia";
+	color: #15a98b;
+	font-size: 15px;
+	font-weight: 500;
+}
+.link
+{
+	font-family: "Georgia";
+	color: #15a98b;
+	font-size: 15px;
+	font-weight: 500;
+	margin-left: 2px;
+}

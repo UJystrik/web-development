@@ -1,9 +1,29 @@
+<?php 
+        $email = $_POST['email'] ?? null;
+        $name = $_POST['name'] ?? null;
+        $country = $_POST['country'] ?? null;
+        $gender = $_POST['gender'] ?? null;
+        $message = $_POST['message'] ?? null;
+        if (empty($email))
+        {
+        } else
+        {
+        $file = fopen("C:/Users/polzovatel/Documents/web-development/lw6/data-message/".$email.".txt", "w");
+        $user = 'asdf';
+        fwrite($file, $email.PHP_EOL);
+        fwrite($file, $name.PHP_EOL);
+        fwrite($file, $country.PHP_EOL);
+        fwrite($file, $gender.PHP_EOL);
+        fwrite($file, $message.PHP_EOL);
+        fclose($file); 
+        } 
+?>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
   	<meta charset="UTF-8"/>
     <title>Вязов Родион</title>
-    <link rel="stylesheet" type="text/css" href="css/style2.css">	
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/css/style2.css">	
   </head>
   <body>
     <header>

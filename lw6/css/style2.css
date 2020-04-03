@@ -406,6 +406,7 @@ h4
     margin: 0;
     margin-right: 20px;
     margin-bottom: 28px;
+    margin-top: 2px;
 
 }
 #inpbox
@@ -415,8 +416,7 @@ h4
     border-radius: 2px;
     font-family: "Georgia";
     font-size: 12px;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 3%;
     color: #555555;
     font-family: "Open Sans";
     font-weight: 400;

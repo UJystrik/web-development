@@ -1,60 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-h1
+.h1
 {
-	font-size: 38px;
+    font: 700 38px/1 Open Sans;
     line-height: 42px;
-    color: #333333;
-    font-family: "Open Sans";
-    font-weight: 700;
-    padding-top: 7.7%;
+    color: #333;
     margin-bottom: 3.3%;
+    padding: 7.7% 0 0 0;
 }
-h2
+.h2
 {
-	font-size: 29px;
+    font: 400 29px/1 Open Sans;
     line-height: 45px;
-    color: #333333;
-    font-family: "Open Sans";
-    font-weight: 400;
-    margin-left: 2px;
-    margin-top: 29px;
-    margin-bottom: -20px;
+    color: #333;
+    margin: 29px 0 -22px 0;
 }
-p
+.p
 {
-	margin-top: 27px;
-	color: #555555;
-    font-family: "Georgia";
-    font-size: 14px;
+    font: 14px/1 Georgia;
+	margin: 27px 0 0 4px;
+	color: #555;
     line-height: 1.85;
-    margin-left: 4px;
 
 }
-ol
+.ol
 {
+    font: 500 14px/1 Georgia;
 	width: 260px;
-    font-size: 14px;
     line-height: 29px;
-    color: #555555;
-    font-family: "Georgia";
-    font-weight: 500;
-    margin-left: -25px;
+    color: #555;
+    margin: -2px 0 0 -22px;
 }
-ul
+.ul
 {
-	
-    font-size: 13px;
+	font: 500 13px/1 Georgia;
     line-height: 29px;
-    color: #555555;
-    font-family: "Georgia";
-    font-weight: 500;
+    color: #555;
     padding-bottom: 12px;
     margin-left: -22px;
 }
 .img1
 {
 	height: 280px;
-	width: 34.7%;
+	width: 265px;
 	border-radius: 5px;
     float: left;
     display: block;
@@ -73,16 +59,13 @@ ul
 .box
 {
 	width: 50%;
-	padding-top: 11%;
-	padding-left: 25.4%;
-    padding-right: 25.1%;
+    padding: 11% 25.1% 0 25.4%;
     margin-top: 2.7%; 
     display: block;
-    background-image: url("https://sun9-64.userapi.com/c856032/v856032493/20c5e3/FL9H9BRzi60.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: static;
-    background-position: 60% 3%;
+    background-image: url(../images/shapka.jpg);
+    background-size: 100% 320px;
+    background-repeat: no-repeat; 
+    position: static;  
     clear: both;
 }
 .leftbox
@@ -90,26 +73,24 @@ ul
     width: 260px;
     position: static;
     float: left;
-    margin-top: -27px;
-    margin-right: 53px;
-    margin-bottom: 50px;
+    margin: -20px 51px 50px 0;
 }
 .rightbox
 {
    margin-top: -20px; 
+   position: static;
+   float: left;
+   width: 443px;
 }
 #last_film
 {
+    font: 500 14px/1 Georgia;
     display: block;
     position: static;
-    background-image: url("https://sun9-60.userapi.com/c856032/v856032493/20c5cb/5TUxJVETw4U.jpg");
-    font-family: "Georgia";
+    background-image: url("../images/button_background.jpg");
     color: #f5f5f5;
-    font-weight: 600;
     text-align: center;
     padding: 12px;
-    font-weight: 500;
-    font-size: 14px;
     text-decoration: none;
     width: 9%; 
     margin:0 auto;
@@ -128,17 +109,15 @@ ul
 {
     width: 64.5%;
     padding-left: 19%;
-    margin-bottom: 9px;
+    margin: 74px 0 45px 0;
     display: block;
     position: static;
-    margin-top: 58px; 
     top: 0;
 }
 .box3
 {
-    margin-right: 1%;
-    width: 24% ;
-    margin-top: 40px;
+    margin: 40px 1% 0 0;
+    width: 24%;
     display: block;
     position: static;
     float: left;
@@ -151,19 +130,15 @@ ul
 }
 .p_on_box3
 {
-    color: #555555;
-    font-family: "Georgia";
-    margin-left: 0px;
-    margin-top: -6px;
-    font-size: 13px;
+    font: 13px/1 Georgia;
+    color: #555;
+    margin: -5px 0 0 1px;
     line-height: 1.75;
 }
-h3
+.h3
 {
-    font-family: "Open Sans";
-    font-weight: 700;
-    font-size: 17.5px;
-    margin-top:17px;
+    font: 700 17.5px/1 Open Sans;
+    margin: 20px 0 24px 0;
 }
 #box
 {
@@ -175,40 +150,31 @@ h3
 }
 .listheading-u
 {
-	font-size: 19px;
+    font: 600 19px/1 Open Sans;
     line-height: 30px;
     color: #15a98c;
-    font-family: "Open Sans";
     margin-top: 65px;
-    font-weight: 600;
     line-height: 10px;
 }
 .listheading-o
 {
-	font-size: 19px;
-    line-height: 30px;
+    font: 600 19px/1 Open Sans;
     color: #15a98c;
-    font-family: "Open Sans";
     margin-top: 30px;
-    font-weight: 600;
     line-height: 8px;
 }
 .quote
 {
-    font-size: 133%;
-    font-family: "Georgia";
-    font-style: italic;
+    font: italic 133%/1 Georgia;
     line-height: 1.55;
-    margin-top: 5%;
+    margin: 24px 0 0 3px;
     color: #fff;
 }
 .autor
 {
-	font-family: "Open Sans";
-	font-size: 13px;
+    font: 13px/1 Open Sans;
     line-height: 30px;
-    margin-left: 1%;
-    margin-top: -4%;
+    margin: 3px 0 0 6px;
     color: #fff;
 }
 #a
@@ -217,18 +183,23 @@ h3
 }
 #arrow
 {
-	font-family: "Georgia";
+    font: 500 15px/1 Georgia;
 	color: #15a98b;
-	font-size: 15px;
-	font-weight: 500;
 }
 .link
 {
-	font-family: "Georgia";
+    font: 500 15px/1 Georgia;
 	color: #15a98b;
-	font-size: 15px;
-	font-weight: 500;
-	margin-left: 2px;
+    margin: 40px 0 0 2px;
+}
+.link2
+{
+    text-decoration: none;
+    font: 500 15px/1 Georgia;
+    color: #15a98b;
+    padding: 0;
+    margin: 0;
+
 }
 .boxquote
 {
@@ -252,37 +223,34 @@ h3
 .shapka
 {
     position: static;
-    margin-top: 0%;
     list-style-type: none;
     width: 50%;
-    margin-left: 24.7%;
-    padding-left: 50px; 
+    margin: 0 0 0 24.7%; 
     padding: 0;
     overflow: hidden;
     
 }
+.li_in_shapka
+{
+    padding: 0px;
+}
 li a 
 {
-    display: block;
-    color: white;
+    font: 600 14px/1 Georgia;
     text-align: center;
-    font-family: "Georgia";
-    color: #333333;
+    color: #333;
     display: inline;
     float: left;
-    padding: 6px;
-    padding-left: 4%;
-    padding-right: 4%;
-    font-weight: 600;
-    font-size: 14px;
+    margin: 0;
+    padding: 13px 4% 0 4%;
+    height: 28.5px;
     text-decoration: none;
 }
 li a:hover 
 {
+    font: 600 Georgia;
     background-image: url("https://sun9-60.userapi.com/c856032/v856032493/20c5cb/5TUxJVETw4U.jpg");
-    font-family: "Georgia";
     color: #f5f5f5;
-    font-weight: 600;
 }
 .header
 {
@@ -291,7 +259,7 @@ li a:hover
     left: 0;
     background-color: #fff;
     width: 100%;
-    height: 41px;
+    height: 41.5px;
 }
 .clear
 {

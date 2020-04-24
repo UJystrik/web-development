@@ -1,148 +1,253 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-h1
+.h1_name
 {
-	font-size: 38px;
-    line-height: 42px;
-    color: #333333;
-    font-family: "Open Sans";
-    font-weight: 700;
-    padding-top: 85px;
-    margin-bottom: 14px;
+    font: 700 45px/1.5 Open Sans;
+    color: #333;
+    margin-bottom: 3.3%;
+    padding: 8% 0 0 0;
 }
-h2
+.h2
 {
-	font-size: 29px;
-    line-height: 45px;
-    color: #333333;
-    font-family: "Open Sans";
-    font-weight: 400;
-    margin-left: 2px;
-    margin-top: 29px;
-    margin-bottom: -20px;
+    font: 400 36px/1.5 Open Sans;
+    color: #333;
+    margin: 35px 0 -20px 3px;
 }
-p
+.p
 {
-	margin-top: 27px;
-	color: #555555;
-    font-family: "Georgia";
-    font-size: 14px;
-    line-height: 1.85;
-    margin-left: 4px;
+    font: 18px/1.8 Georgia;
+	margin: 29px 0 0 4px;
+	color: #555;
 
 }
-ol
+.ol 
 {
-	width: 260px;
-    font-size: 14px;
-    line-height: 29px;
-    color: #555555;
-    font-family: "Georgia";
-    font-weight: 500;
-    margin-left: -25px;
+    font: 500 19px/1.9 Georgia;
+    width: 260px;
+    color: #555;
+    margin: 9px 0 0 -21px;
 }
-ul
-{
-	width: 260px;
-    font-size: 13px;
-    line-height: 29px;
-    color: #555555;
-    font-family: "Georgia";
-    font-weight: 500;
-    padding-bottom: 12px;
-    margin-left: -22px;
+.ul {
+    font: 500 18px/2 Georgia;
+    color: #555;
+    margin: 0px 0 0 20px;
+    padding: 0;
 }
-.img1
+.my_photo
 {
-	height: 280px;
-	width: 264px;
+	height: 349px;
+    width: 330px;
 	border-radius: 5px;
-	padding-bottom: 9px;
+    float: left;
+    display: block;
 }
 .img2
 {
 	height: 72px;
 	width: 120px;
-	margin-left: -5px;
-	padding-top: 13px;
+    margin-top: 36px;
 }
-.img3
+.band
 {
-	height: 12px;
-	width: 55px;
+	height: 13px;
+    width: 14%;
 }
-
-.leftbox
+.box
 {
-	width: 264px;
-	margin-top: 72px;
-	margin-left: 376px;
-	margin-right: 34px;
-    padding-right: 10px;
+	width: 63.1%;
+    padding: 220px 19.7% 0 17.7%;
+    margin-top: 2.7%;
+    display: block;
+    background-image: url(../images/shapka.jpg);
+    background-size: 100% 409px;
+    background-repeat: no-repeat;
+    position: static;
+    clear: both;
+}
+.leftbox_hobby
+{
+    width: 35%;
+    position: static;
+    float: left;
+    margin: -20px 51px 100px 0;
+}
+.rightbox_hobby
+{
+    margin: -21px 0 0 2px;
+    position: static;
+    float: left;
+    width: 59%;
+}
+#last_film
+{
+    font: 500 18px/1.5 Georgia;
+    display: block;
+    position: static;
+    background-image: url(../images/button_background.jpg);
+    color: #f5f5f5;
+    text-align: center;
+    text-decoration: none;
+    width: 13%;
+    height: 24px;
+    margin: 0 auto;
+    padding: 13px 14px 13px 14px;
+    border-radius: 5px;
+}
+.box_hobby
+{
+    width: 65%;
+    padding: 0 0 0 17.7%;
+    display: block;
+    position: static;
+    top: 0;
+}
+.box_films
+{
+    width: 82.2%;
+    margin: 56px 0 45px 9.4%;
+    display: block;
+    position: static;
+    top: 0;
+}
+.box_film
+{
+    margin: 48px 1.6% 0 0.1%;
+    width: 23.7%;
+    display: block;
+    position: static;
+    float: left;
+}
+.img_film
+{
+    width: 100%;
+    height: 190px;
+    border-radius: 5px;
+}
+.p_film
+{
+    font: 16px/1.75 Georgia;
+    color: #555;
+    margin: 0px 0 0 1px;
+}
+.h3
+{
+    font: 700 22px/1.5 Open Sans;
+    margin: 20px 0 15px -2px;
+}
+#box_film
+{
+    width: 23.7%;
+    margin: 49px 0 0 0%;
+    display: block;
+    position: static;
     float: left;
 }
 .listheading-u
 {
-	font-size: 19px;
-    line-height: 30px;
+    font: 600 24px/1.5 Open Sans;
     color: #15a98c;
-    font-family: "Open Sans";
-    margin-top: 30px;
-    font-weight: 600;
+    margin-top: 76px;
     line-height: 10px;
 }
 .listheading-o
 {
-	font-size: 19px;
-    line-height: 30px;
+    font: 600 24px/1.5 Open Sans;
     color: #15a98c;
-    font-family: "Open Sans";
-    margin-top: 30px;
-    font-weight: 600;
-    line-height: 8px;
-}
-.rightbox
-{
-	width: 450px;
-	margin-top: 100px;
-    padding-right: 10px;
-    float: left;
+    margin: 40px 0 0 0;
 }
 .quote
 {
-    font-size: 23px;
-    line-height: 42px;
-    color: #848484;
-    font-family: "Georgia";
-    font-style: italic;
-    line-height: 1.5;
-    margin-top: -22px;
-    margin-left: 50px;
+    font: italic 27px/1.6 Georgia;
+    margin: 24px 0 7px 3px;
+    color: #fff;
 }
 .autor
 {
-	font-family: "Open Sans";
-	font-weight: 700;
-	font-size: 13px;
-    line-height: 30px;
-    margin-left: 55px;
-    margin-top: -21px;
+    font: 17px/1.5 Open Sans;
+    margin: 3px 0 0 10px;
+    color: #fff;
 }
-#a
-{
-	margin-bottom: 35px;
-}
+
 #arrow
 {
-	font-family: "Georgia";
+    font: 500 15px/1 Georgia;
 	color: #15a98b;
-	font-size: 15px;
-	font-weight: 500;
 }
-.link
+.link_vk
 {
-	font-family: "Georgia";
-	color: #15a98b;
-	font-size: 15px;
-	font-weight: 500;
-	margin-left: 2px;
+    font: 500 19px/1.5 Georgia;
+    color: #15a98b;
+    margin: 44px 0 0 3px;
+}
+.link_arr
+{
+    text-decoration: none;
+    font: 500 15px/1 Georgia;
+    color: #15a98b;
+    padding: 0;
+    margin: 0;
+
+}
+.boxquote
+{
+    float: left;
+    width: 55%;
+    margin-left: 6%;
+}
+.clear
+{
+    clear: both;
+}
+.position
+{
+    margin-left: -0.6%;
+}
+.container 
+{
+  display: grid;
+  grid-template-rows: 100%;
+}
+.shapka
+{
+    position: static;
+    list-style-type: none;
+    width: 65%;
+    margin: 0 0 0 297px; 
+    padding: 0;
+    overflow: hidden;   
+}
+.li_in_shapka
+{
+    padding: 0px;
+}
+li a 
+{
+    font: 600 14px/1 Georgia;
+    text-align: center;
+    color: #333;
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 17px 4% 0 4%;
+    height: 31px;
+    text-decoration: none;
+}
+li a:hover 
+{
+    font: 600 Georgia;
+    background-image: url("https://sun9-60.userapi.com/c856032/v856032493/20c5cb/5TUxJVETw4U.jpg");
+    color: #f5f5f5;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 48px;
+    box-shadow: 0 0 0 2px #14a98b;
+}
+
+.text-decoration-none
+{
+    text-decoration: none;
 }

@@ -1,53 +1,49 @@
-{
-    function isPrimeNumber(digit) {
-        if(Array.isArray(digit)) {
-            let otvet = null
-            let numberofDigit = digit.length //определяем количество элементов в массиве
-            for(let i = 0; i < numberofDigit; i++) {
-                if (typeof digit[i] == 'number') {
-                    let j = 2
-                    if((digit[i] == 1) || (digit[i] == 2)) {
-                        console.log(digit[i] + ' is prime number')
-                    } else {
-                        for (; j < digit[i];) {
-                            if (digit[i] % j == 0) {
-                                console.log(digit[i] + ' is not prime number') 
-                                break
-                            } else {
-                                j++
-                                if (digit[i] == j) {
-                                    console.log(digit[i] + ' is prime number')
-                                }
-                            }
-                        }
-                    }                                                       
+const Yes = 'Yes';
+const No = 'No';
+const errorType = 'errorType';
+
+function CheckPrimeNumber(digit) {   //Функция возвращает 'No' - если это не простое число, 'Yes' - если это простое число, 'error' - если введенная переменная не числовая
+    if (typeof digit == 'number') {  //Проверка на число, цифру
+        if((digit == 0) || (digit == 1)) {
+            return('No');
+        } else {
+            for (let j = 2; j < digit + 1; j++) {
+                if (digit == j ) {
+                    return('Yes'); 
                 } else {
-                    return('error')
+                    if (digit % j == 0) {
+                        return('No');
+                    }
                 }
             }
-        } else {
-            if(typeof digit == 'number') {
-                let j = 2 
-                if((digit == 1) || (digit == 2)) {
-                    console.log(digit + ' is prime number')
-                } else {
-                    for (; j < digit;) {
-                        if (digit % j == 0) {
-                            console.log(digit + ' is not prime number') 
-                            break
-                        } else {
-                            j++
-                            if (digit == j){
-                                console.log(digit + ' is prime number')
-                            }
-                        }
-                    }
-                }  
-            } else {
-                return('error')
-            }
-
-        }
-        return(0)		
+        }                                                       
+    } else {
+        return('errorType');
     }
+}
+
+function PrintResultOfChecking(digit){
+    if (CheckPrimeNumber(digit) == Yes) {
+        console.log(digit + ' is prime number');
+    } else {
+        if (CheckPrimeNumber(digit) == No) {
+        console.log(digit + ' is not prime number');
+        } else {
+            if (CheckPrimeNumber(digit) == errorType) {
+                return('error');
+            }
+        }
+    }
+
+}
+
+function isPrimeNumber(arrORdigit) {
+    if(Array.isArray(arrORdigit)) {      //Проверка на массив
+        let numberofDigit = arrORdigit.length; //определяем количество элементов в массиве
+        for(let i = 0; i < numberofDigit; i++) {
+            PrintResultOfChecking(arrORdigit[i]);
+        }                                      
+    } else {
+        PrintResultOfChecking(arrORdigit);
+    }		
 }

@@ -6,7 +6,7 @@ const ISPRIME = ' is prime number';
 const ISNOTPRIME = ' is not prime number';
 
 function CheckPrimeNumber(digit) {   //Функция возвращает 'No' - если это не простое число, 'Yes' - если это простое число, 'error' - если введенная переменная не числовая
-    if (typeof digit == NUMBER) {  //Проверка на число, цифру
+    if (typeof digit === NUMBER) {  //Проверка на число, цифру
         if((digit === 0) || (digit === 1)) {
             return(NO);
         } else {

@@ -1,24 +1,16 @@
-const stringSign = '+-*/';
-const stringNumber = '0123456789';
-const error = 'error'
+const STRINGSIGN = '+-*/';
+const STRINGNUMBER = '0123456789';
+const ERROR = 'error'
 
 function isString(val) {
     return(typeof val === "string" || val instanceof String);
-}
-
-function s(){
-	var string = '12345';
-	var pastString = '12345';
-	var pastString1 = '12345';
-	string = string.replace(pastString, pastString1);
-	console.log(string);
 }
 
 function calc(string){
 	if(isString(string) === false){
  		return('Неверная запись, введите строку');
  	}
- 	if(checkBracket(string) === error){
+ 	if(checkBracket(string) === ERROR){
  		return('Неверная запись, исправьте количество скобок');
  	}
  	string = '(' + string + ')';
@@ -26,7 +18,7 @@ function calc(string){
  	numberOFbracket = checkBracket(string);
  	pastString = string.substring(firstBracket(string), lastBracket(string) + 1);
  	for(let j = 1; j < numberOFbracket + 1; j++){
- 		if(pastCalc(pastString) === error){
+ 		if(pastCalc(pastString) === ERROR){
  			return('Неверная запись');
  		}
  		pastString = string.substring(firstBracket(string), lastBracket(string) + 1);
@@ -50,7 +42,7 @@ function checkBracket(string){
 	if(numberOFfirstSymbol === numberOFsecondSymbol){
 		return(numberOFfirstSymbol);
 	} else {
-		return(error);
+		return(ERROR);
 	}
 }
 
@@ -79,7 +71,7 @@ function passNumber(string, position){
 		position++;
 	}
 	position = passSpace(string, position);
-	while(stringNumber.includes(string[position])){
+	while(STRINGNUMBER.includes(string[position])){
 		position++;
 	}
 	return(position);
@@ -101,10 +93,10 @@ function subString(string, position){
 		position = passSpace(string, position);
 		plus = 'N';
 	}
-	if(stringNumber.includes(string[position])){
+	if(STRINGNUMBER.includes(string[position])){
 		numberString = '';
 	}
-	while(stringNumber.includes(string[position])){
+	while(STRINGNUMBER.includes(string[position])){
 		numberString = numberString + string[position];
 		position++;
 	}
@@ -138,23 +130,23 @@ function answer(sign, firstNumber, secondNumber){
 function pastCalc(string){
 	let position = 1;
 	position = passSpace(string, position);
-	if(stringSign.includes(string[position])){  //найден знак
+	if(STRINGSIGN.includes(string[position])){  //найден знак
 		var sign = string[position];            //sign-знак
 		position++;
 	} else {
-		return(error);
+		return(ERROR);
 	}
 	position = passSpace(string, position);
 	if(isNaN(subString(string, position)) === false){
 		var firstNumber = readNumber(string, position);
 	} else {
-		return(error);
+		return(ERROR);
 	}
 	position = passNumber(string, position);
 	if(isNaN(subString(string, position)) === false){
 		var secondNumber = readNumber(string, position);
 	} else {
-		return(error);
+		return(ERROR);
 	}
 	position = passSpace(string, position);
 	position = passNumber(string, position);
@@ -163,6 +155,6 @@ function pastCalc(string){
 	if(string[position] === ')'){
 		return(answerFull);
 	} else {
-		return(error);
+		return(ERROR);
 	}
 }

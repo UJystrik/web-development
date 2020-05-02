@@ -7,14 +7,14 @@ const ISNOTPRIME = ' is not prime number';
 
 function CheckPrimeNumber(digit) {   //Функция возвращает 'No' - если это не простое число, 'Yes' - если это простое число, 'error' - если введенная переменная не числовая
     if (typeof digit == NUMBER) {  //Проверка на число, цифру
-        if((digit == 0) || (digit == 1)) {
+        if((digit === 0) || (digit === 1)) {
             return(NO);
         } else {
             for (let j = 2; j < digit + 1; j++) {
                 if (digit == j ) {
                     return(YES); 
                 } else {
-                    if (digit % j == 0) {
+                    if (digit % j === 0) {
                         return(NO);
                     }
                 }
@@ -26,13 +26,13 @@ function CheckPrimeNumber(digit) {   //Функция возвращает 'No' 
 }
 
 function PrintResultOfChecking(digit){
-    if (CheckPrimeNumber(digit) == YES) {
+    if (CheckPrimeNumber(digit) === YES) {
         console.log(digit + ISPRIME);
     } else {
-        if (CheckPrimeNumber(digit) == NO) {
+        if (CheckPrimeNumber(digit) === NO) {
         console.log(digit + ISNOTPRIME);
         } else {
-            if (CheckPrimeNumber(digit) == ERROR) {
+            if (CheckPrimeNumber(digit) === ERROR) {
                 return(ERROR);
             }
         }

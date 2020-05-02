@@ -1,36 +1,39 @@
-const yes = 'Yes';
-const no = 'No';
-const errorType = 'errorType';
+const YES = 'Yes';
+const NO = 'No';
+const ERROR = 'errorType';
+const NUMBER = 'number';
+const ISPRIME = ' is prime number';
+const ISNOTPRIME = ' is not prime number';
 
 function CheckPrimeNumber(digit) {   //Функция возвращает 'No' - если это не простое число, 'Yes' - если это простое число, 'error' - если введенная переменная не числовая
-    if (typeof digit == 'number') {  //Проверка на число, цифру
+    if (typeof digit == NUMBER) {  //Проверка на число, цифру
         if((digit == 0) || (digit == 1)) {
-            return(no);
+            return(NO);
         } else {
             for (let j = 2; j < digit + 1; j++) {
                 if (digit == j ) {
-                    return(yes); 
+                    return(YES); 
                 } else {
                     if (digit % j == 0) {
-                        return(no);
+                        return(NO);
                     }
                 }
             }
         }                                                       
     } else {
-        return(errorType);
+        return(ERROR);
     }
 }
 
 function PrintResultOfChecking(digit){
-    if (CheckPrimeNumber(digit) == yes) {
-        console.log(digit + ' is prime number');
+    if (CheckPrimeNumber(digit) == YES) {
+        console.log(digit + ISPRIME);
     } else {
-        if (CheckPrimeNumber(digit) == no) {
-        console.log(digit + ' is not prime number');
+        if (CheckPrimeNumber(digit) == NO) {
+        console.log(digit + ISNOTPRIME);
         } else {
-            if (CheckPrimeNumber(digit) == errorType) {
-                return('error');
+            if (CheckPrimeNumber(digit) == ERROR) {
+                return(ERROR);
             }
         }
     }

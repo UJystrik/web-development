@@ -1,17 +1,23 @@
 const STRINGSIGN = '+-*/';
 const STRINGNUMBER = '0123456789';
-const ERROR = 'error'
+const ERROR = 'error';
+const YES = 'yes';
+const NO = 'no';
+const STRING = 'string';
+const ERRORSTR = 'Неверная запись, введите строку';
+const ERRORBRACKET = 'Неверная запись, исправьте количество скобок';
+const ERRORWRITE = 'Неверная запись';
 
 function isString(val) {
-    return(typeof val === "string" || val instanceof String);
+    return(typeof val === STRING || val instanceof String);
 }
 
 function calc(string){
 	if(isString(string) === false){
- 		return('Неверная запись, введите строку');
+ 		return(ERRORSTR);
  	}
  	if(checkBracket(string) === ERROR){
- 		return('Неверная запись, исправьте количество скобок');
+ 		return(ERRORBRACKET);
  	}
  	string = '(' + string + ')';
  	let pastString = '';
@@ -19,7 +25,7 @@ function calc(string){
  	pastString = string.substring(firstBracket(string), lastBracket(string) + 1);
  	for(let j = 1; j < numberOFbracket + 1; j++){
  		if(pastCalc(pastString) === ERROR){
- 			return('Неверная запись');
+ 			return(ERRORWRITE);
  		}
  		pastString = string.substring(firstBracket(string), lastBracket(string) + 1);
  		string = string.replace(pastString, ' ' + pastCalc(pastString) + ' ');
@@ -87,11 +93,11 @@ function passSpace(string, position){
 function subString(string, position){
 	position = passSpace(string, position);
 	let numberString = undefined;
-	let plus = 'Y';
+	let plus = YES;
 	if(string[position] === '-'){
 		position++;
 		position = passSpace(string, position);
-		plus = 'N';
+		plus = NO;
 	}
 	if(STRINGNUMBER.includes(string[position])){
 		numberString = '';
@@ -100,7 +106,7 @@ function subString(string, position){
 		numberString = numberString + string[position];
 		position++;
 	}
-	if(plus === 'N'){
+	if(plus === NO){
 		return('-' + numberString);
 	}
 	return(numberString);

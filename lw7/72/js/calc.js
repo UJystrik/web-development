@@ -29,7 +29,7 @@ function calc(string) {
  	}
  	pastString = string.substring(firstBracket(string), lastBracket(string) + 1);
  	string = string.replace(pastString, ' ' + pastCalc(pastString) + ' ');
-  }
+    }
  	return readNumber(string, 0);
 }
 

@@ -93,7 +93,7 @@
     text-decoration: none;
     width: 13%;
     margin: 0 auto;
-    margin-bottom: 90px;
+    margin-bottom: 95px;
     padding: 13px 14px 13px 14px;
     border-radius: 5px;
 }
@@ -139,7 +139,7 @@
     margin: 20px 0 15px -2px;
 }
 
-#box_film
+.box_film_last
 {
     width: 23.7%;
     margin: 49px 0 0 0%;
@@ -174,7 +174,7 @@
     color: #fff;
 }
 
-#arrow
+.arrow
 {
     font: 500 15px/1 Georgia;
 	color: #15a98b;
@@ -320,4 +320,119 @@
     clear: both;
     margin: 0 auto;
     text-align: center;
+}
+
+.countbox
+{
+    -webkit-appearance: none;
+    background-image: url(../images/arrow_down.png);
+    background-position: right -37px top 56px;
+    margin: 0 0 35px 0;
+    padding: 0 0px 0 17px;
+    font: 400 18px/1.5 Open Sans;
+    height: 52px;
+    width: 101%;
+    border: 2px solid #c9c9c9;
+    border-radius: 2px;
+    color: #555;
+}
+
+.input_box
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.aboutme
+{
+    width: 36.6%;
+    margin: 0 auto;
+}
+
+.linepng
+{
+    float: left;
+    width: 29%;
+    margin: 23px 0 0 0;
+}
+
+.titleme
+{
+    font: 400 20px/2 Open Sans;
+    float: left;
+    margin: 0; 
+}
+
+.spec
+{
+    font: 600 25px/1.5 Open Sans;
+    color: #f00;
+    float: left;
+    margin: -4px 0 0 4px;
+}
+
+.inpboxText
+{
+    font: 400 20px/2 Open Sans;
+    width: 96%;
+    border: 2px solid #c9c9c9;
+    border-radius: 2px;
+    padding: 2.2%;
+    color: #555;
+    margin-bottom: 49px;
+    resize: none;
+}
+
+.inpbox
+{
+    font: 400 18px/1.5 Open Sans;
+    height: 45px;
+    width: 93%;
+    border: 2px solid #c9c9c9;
+    border-radius: 2px;
+    padding: 0 19px 0 19px;
+    color: #555;
+    margin: 0 0 20px 0;
+}
+
+.writeme
+{
+    font: 100 35px/1.5 Open Sans;
+    width: 40%;
+    text-align: center;
+    color: #333;
+    float: left;
+    margin: 3px 0 59px 0;
+}
+
+.ball
+{
+    width: 13px;
+    color: #333;
+    float: left;
+    margin: 12px 0 0 0;    
+}
+
+.genbox
+{
+    margin-top: 15px;
+}
+
+.textongenbox
+{
+    font: 400 18px/1.5 Open Sans;
+    float: left;
+    margin: 4px 41px 34px 8px;
+}
+
+.button
+{
+    font: 100 18px/1.5 Georgia;
+    width: 41%;
+    height: 49px;
+    background-color: #14a98b;
+    border: 0;
+    border-radius: 5px;
+    color: #f5f5f5;
+    margin: 0 0 66px 0;
 }

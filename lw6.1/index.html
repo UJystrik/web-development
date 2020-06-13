@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
   <head>
   	<meta charset="UTF-8"/>
     <title>Вязов Родион</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">	
-  </head>
+  </head> 
   <body>
     <header>
       <div class="header">
@@ -23,10 +23,10 @@
         <img src="images/MyPhoto.jpg" class="my_photo"> 
         <div class="boxquote">
           <blockquote class="quote">
-            Талант — это то, что ты сделал, а не то, что ты хотел.
+            Жизнь - это возможности, и не стоит ими пренебрегать.
           </blockquote>
           <cite class="autor">
-            — Л. Гурченко
+            — Дусюська
           </cite>
           <a href="" name="me"></a> 
           <h1 class="h1_name">Вязов Родион</h1>
@@ -95,7 +95,7 @@
             Пострадав в результате несчастного случая, богатый аристократ Филипп нанимает в помощники человека, который менее всего подходит для этой работы, — молодого жителя предместья Дрисса, только что освободившегося из тюрьмы. Несмотря на то, что Филипп прикован к инвалидному креслу, Дриссу удается привнести в размеренную жизнь аристократа дух приключений.
           </p>
         </div>
-        <div id="box_film">
+        <div class="box_film_last">
           <img src="images/Hatiko.jpg" class="img_film">
           <h3 class="h3">Хатико</h3>
           <p class="p_film">
@@ -107,6 +107,69 @@
       <a href="https://yandex.ru/search/?text=%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B&clid=2270455&banerid=6301000000%3A5d67e4b7eba8e200240b8666&win=400&lr=20721" class="last_film">
           Все фильмы
       </a>
+      <div class="input_box">
+        <img src="images/line.jpg" class="linepng">
+          <div class="writeme">НАПИШИ МНЕ</div>
+        <img src="images/line.jpg" class="linepng">
+        <div class="clear"></div>
+      </div>
+      <form method="POST" class="aboutme" enctype="application/x-www-form-urlencoded" action="http://localhost:8080/php/message.php">
+        <label for="name" class="titleme">
+          Ваше имя 
+        </label>
+        <div class="spec"> 
+          &#8727;
+        </div>
+        <input placeholder="Обязательно заполни" maxlength="255" required="required" title="" name="name" value="" size=30 class="inpbox"/>
+        <label for="email" class="titleme">
+          Ваш email
+        </label>
+        <div class="spec"> 
+          &#8727;
+        </div>
+        <input placeholder="Обязательно заполни" required="required" name="email" value="" size=30 class="inpbox">
+        <label for="country" class="titleme">
+          Откуда вы?
+        </label>
+        <select size="1" name="country" class="countbox" title="В какой стране вы живете?">
+          <option value="Россия">Россия</OPTION>    
+          <option value="Украина">Украина</option>
+          <option value="Беларусь">Беларусь</option>
+          <option value="Казахстан">Казахстан</option>
+          <option value="Азербайджан">Азербайджан</option>
+          <option value="Армения">Армения</option>
+          <option value="Грузия">Грузия</option>
+          <option value="Израиль">Израиль</option>   
+          <option value="США">США</option>
+          <option value="Германия">Германия</option>
+          <option value="Кыргызстан">Кыргызстан</option>
+          <option value="Латвия">Латвия</option>
+          <option value="Литва">Литва</option>
+          <option value="Эстония">Эстония</option>
+          <option value="Молдова">Молдова</option>
+          <option value="Таджикистан">Таджикистан</option>
+          <option value="Туркменистан">Туркменистан</option>
+          <option value="Узбекистан">Узбекистан</option>
+        </select>
+        <label for="genbox"  class="titleme">
+          Ваш пол
+        </label>
+        <div class="clear"></div>
+        <td name="genbox" class="genbox">
+          <input id="man" type="radio" name="gender" value="Мужской" checked class="ball"><label for="man" class="textongenbox">Мужской</label>  
+          <input id="girl" type="radio" name="gender" value="Женский" class="ball"><label for="girl" class="textongenbox">Женский</label>   
+        </td>
+        <div class="clear"></div>
+        <label for="message" class="titleme">
+          Ваше сообщение
+        </label>
+        <div class="spec"> 
+          &#8727;
+        </div>
+        <div class="clear"></div>
+        <textarea name="message" placeholder="Можете рассказать о себе или задать мне вопрос" maxlength="255" rows="3" cols="57" wrap="hard" class="inpboxText"></textarea>
+        <input type="submit" value="Отправить" class="button"></input>
+      </form>
   	</article>
   	<footer class="c">
       <div class="footer">&copy; 2006-20018 Поволжский государственный технологический университет, ФГБОУ ВО «ПГТУ»</div>

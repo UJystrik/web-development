@@ -347,8 +347,7 @@ h4
 .aboutme
 {
     width: 28.5%;
-    margin-left: 36.5%;
-    margin-right: 35%;
+    margin: 0 auto;
 }
 .titleme
 {

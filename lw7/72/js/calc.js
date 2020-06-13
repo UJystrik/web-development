@@ -9,12 +9,12 @@ const ERRORBRACKET = 'Неверная запись, исправьте коли
 const ERRORWRITE = 'Неверная запись';
 
 function isString(val) {
-    return typeof val === STRING || val instanceof String;
+  return typeof val === STRING || val instanceof String;
 }
 
 function calc(string) {
     if (isString(string) === false) {
-        return ERRORSTR;
+       	return ERRORSTR;
     }
     if (checkBracket(string) === ERROR) {
         return ERRORBRACKET;
@@ -25,12 +25,12 @@ function calc(string) {
     pastString = string.substring(firstBracket(string), lastBracket(string) + 1);
     for (let j = 1; j < numberOFbracket + 1; j++) {
         if (pastCalc(pastString) === ERROR) {
- 	    return ERRORWRITE;
+            return ERRORWRITE;
  	}
  	pastString = string.substring(firstBracket(string), lastBracket(string) + 1);
  	string = string.replace(pastString, ' ' + pastCalc(pastString) + ' ');
     }
- 	return readNumber(string, 0);
+    return readNumber string, 0;
 }
 
 function checkBracket(string) {
@@ -38,10 +38,10 @@ function checkBracket(string) {
     var numberOFfirstSymbol = 0;
     var numberOFsecondSymbol = 0;
     for (let i = 0; i != numberOFsymbol; i++) {
-        if (string[i] === '(') {
-            numberOFfirstSymbol++;
+        if (string[i] === '(') {                
+	    numberOFfirstSymbol++;
 	}
-        if (string[i] === ')') {
+	if (string[i] === ')') {
 	    numberOFsecondSymbol++;
 	}
     }
@@ -74,18 +74,18 @@ function lastBracket(string) {
 
 function passNumber(string, position) {
     if (string[position] === '-') {
-        position++;
+        position++;             
     }
     position = passSpace(string, position);
     while (STRINGNUMBER.includes(string[position])) {
         position++;
-    }  
+    }
     return position;
 }
 
 function passSpace(string, position) {
     while (string[position] === ' ') {
-        position++;                  
+        position++;
     }
     return position;
 }
@@ -96,15 +96,15 @@ function subString(string, position) {
     let plus = YES;
     if (string[position] === '-') {
         position++;
-	position = passSpace(string, position);
-	plus = NO;
+        position = passSpace(string, position);
+        plus = NO;
     }
     if (STRINGNUMBER.includes(string[position])) {
         numberString = '';
     }
     while (STRINGNUMBER.includes(string[position])) {
-        numberString = numberString + string[position];
-	position++;
+        numberString = numberString + string[position]; 
+        position++;
     }
     if (plus === NO) {
         return '-' + numberString;
@@ -117,11 +117,11 @@ function readNumber(string, position) {
 }
 
 function answer(sign, firstNumber, secondNumber) {
-    switch (sign){
+    switch (sign) {
         case '-':
             return firstNumber - secondNumber;
-	break;
-	case '+':
+        break;
+        case '+':
             return firstNumber + secondNumber;
 	break;
 	case '*':
@@ -137,30 +137,30 @@ function pastCalc(string) {
     let position = 1;
     position = passSpace(string, position);
     if (STRINGSIGN.includes(string[position])) {  //найден знак
-	var sign = string[position];            //sign-знак
-	position++;
+        var sign = string[position];            //sign-знак
+        position++;
     } else {
-  	return ERROR;
+        return ERROR;
     }
     position = passSpace(string, position);
-    if (isNaN(subString(string, position)) === false) {
-	var firstNumber = readNumber(string, position);
+    if(isNaN(subString(string, position)) === false){
+        var firstNumber = readNumber(string, position);
     } else {
-	return ERROR;
+        return ERROR;
     }
     position = passNumber(string, position);
     if (isNaN(subString(string, position)) === false) {
-	var secondNumber = readNumber(string, position);
+        var secondNumber = readNumber(string, position);
     } else {
-	return ERROR;
+        return ERROR;
     }
     position = passSpace(string, position);
     position = passNumber(string, position);
     position = passSpace(string, position);
     var answerFull = answer(sign, firstNumber, secondNumber);
     if (string[position] === ')') {
-	return answerFull;
+        return answerFull;
     } else {
-	return ERROR;
+        return ERROR;
     }
 }
